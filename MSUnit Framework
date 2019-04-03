@@ -14,10 +14,10 @@ namespace TestFileAnalyser
             // Get the file version for the jpg file from c drive.
             
             
-            FileVersionInfo myFileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
+            FileVersionInfo FileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
 
             // Print the file name and version number.
-            Console.WriteLine("File: " + myFileDetailsInfo.FileDescription + '\n' + "Version number: " + myFileDetailsInfo.FileVersion);
+            Console.WriteLine("File: " + FileDetails.FileDescription + '\n' + "Version number: " + FileDetails.FileVersion);
         }
 
         [TestMethod]
