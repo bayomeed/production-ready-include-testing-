@@ -25,7 +25,7 @@ namespace BarclaysProject
         public void FileSize()
         
         {
-            // Get the File size version of the jpg file from c drive.
+            // Get the File size of the jpg file from c drive.
             string path = @"C:\Users\ade araba\Lighthouse.jpg";
             FileInfo filedetails = new FileInfo(path);
             Console.WriteLine(filedetails.Length);
