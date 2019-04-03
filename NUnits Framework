@@ -8,29 +8,42 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BarclaysProject
+{
     class Program
     {
 
-       
+
         [SetUp]
 
+
+        public void LogOnCredential()
+
+        { }
+
+
+        [Test]
         public void FileVersion()
         {
-            // Get the file version for the jpg file from c drive is the functionality to perfrom:
-            FileVersionInfo FileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
+            // Get the file version for the jpg file from c drive 
+            
+            FileVersionInfo FileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\adebayo araba\Lighthouse.jpg");
+
             // Print the file name and version number.
             Console.WriteLine("File: " + FileDetails.FileDescription + '\n' + "Version number: " + FileDetails.FileVersion);
         }
 
+        [Test]
         public void FileSize()
         
         {
-            // Get the File size of the jpg file from c drive.
-            string path = @"C:\Users\ade araba\Lighthouse.jpg";
-            FileInfo filedetails = new FileInfo(path);
-            Console.WriteLine(filedetails.Length);
+            // Get the file size of the jpg file from c drive.
+
+            string path = @"C:\Users\adebayo araba\Lighthouse.jpg";
+            FileInfo Filedetails = new FileInfo(path);
+            Console.WriteLine(Filedetails.Length);
         }
-        //Other required test to be carried out are as follows:
+        
+        Other testing to be performed are listed below e.g negative testing 
         // Test of no parameters passed
         // Test correct number of params passed
         // Test more than required number of params passed
