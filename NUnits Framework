@@ -26,7 +26,7 @@ namespace BarclaysProject
         {
             // Get the file version for the jpg file from c drive 
             
-            FileVersionInfo FileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\adebayo araba\Lighthouse.jpg");
+            FileVersionInfo FileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
 
             // Print the file name and version number.
             Console.WriteLine("File: " + FileDetails.FileDescription + '\n' + "Version number: " + FileDetails.FileVersion);
@@ -38,7 +38,7 @@ namespace BarclaysProject
         {
             // Get the file size of the jpg file from c drive.
 
-            string path = @"C:\Users\adebayo araba\Lighthouse.jpg";
+            string path = @"C:\Users\ade araba\Lighthouse.jpg";
             FileInfo Filedetails = new FileInfo(path);
             Console.WriteLine(Filedetails.Length);
         }
