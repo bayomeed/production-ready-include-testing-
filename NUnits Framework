@@ -17,9 +17,9 @@ namespace BarclaysProject
         public void FileVersion()
         {
             // Get the file version for the jpg file from c drive is the functionality to perfrom:
-            FileVersionInfo myFileVersionInfo = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
+            FileVersionInfo FileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
             // Print the file name and version number.
-            Console.WriteLine("File: " + myFileVersionInfo.FileDescription + '\n' + "Version number: " + myFileVersionInfo.FileVersion);
+            Console.WriteLine("File: " + FileDetails.FileDescription + '\n' + "Version number: " + FileDetails.FileVersion);
         }
 
         public void FileSize()
