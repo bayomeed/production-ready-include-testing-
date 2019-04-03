@@ -1,0 +1,42 @@
+using System;
+using System.Diagnostics;
+using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace TestFileAnalyser
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            // Get the file version for the jpg file from c drive.
+            
+            
+            FileVersionInfo myFileVersionInfo = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
+
+            // Print the file name and version number.
+            Console.WriteLine("File: " + myFileVersionInfo.FileDescription + '\n' + "Version number: " + myFileVersionInfo.FileVersion);
+        }
+
+        [TestMethod]
+
+        public void TestMethod2()
+        {
+            // Get the File size  of the jpg file from c drive.
+
+            string path = @"C:\Users\ade araba\Lighthouse.jpg";
+            FileInfo filedetails = new FileInfo(path);
+            Console.WriteLine(filedetails.Length);
+        }
+        //Other required test to be carried out are as follows:
+        // Test of no parameters passed
+        // Test correct number of params passed
+        // Test more than required number of params passed
+        // 8 tests - 1 for each valid scenario for arg1
+        // couple more for invalid values for arg1
+        // one scenario for a correct filename
+        // couple for incorrect filenames
+    }
+}
