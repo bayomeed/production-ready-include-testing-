@@ -14,10 +14,10 @@ namespace TestFileAnalyser
             // Get the file version for the jpg file from c drive.
             
             
-            FileVersionInfo myFileVersionInfo = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
+            FileVersionInfo myFileDetails = FileVersionInfo.GetVersionInfo(Environment.SystemDirectory + @"C:\Users\ade araba\Lighthouse.jpg");
 
             // Print the file name and version number.
-            Console.WriteLine("File: " + myFileVersionInfo.FileDescription + '\n' + "Version number: " + myFileVersionInfo.FileVersion);
+            Console.WriteLine("File: " + myFileDetailsInfo.FileDescription + '\n' + "Version number: " + myFileDetailsInfo.FileVersion);
         }
 
         [TestMethod]
@@ -27,8 +27,8 @@ namespace TestFileAnalyser
             // Get the File size  of the jpg file from c drive.
 
             string path = @"C:\Users\ade araba\Lighthouse.jpg";
-            FileInfo filedetails = new FileInfo(path);
-            Console.WriteLine(filedetails.Length);
+            FileInfo Filedetails = new FileInfo(path);
+            Console.WriteLine(Filedetails.Length);
         }
         //Other required test to be carried out are as follows:
         // Test of no parameters passed
