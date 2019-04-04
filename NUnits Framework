@@ -42,7 +42,11 @@ namespace BarclaysProject
             FileInfo Filedetails = new FileInfo(path);
             Console.WriteLine(Filedetails.Length);
         }
-        
+        [TearDown]
+        public void CleanUp()
+        {
+        //Assuming you have created a properrtiescollection class library
+        PropertiesCollection.driver.Manage();
         Other testing to be performed are listed below e.g negative testing 
         // Test of no parameters passed
         // Test correct number of params passed
