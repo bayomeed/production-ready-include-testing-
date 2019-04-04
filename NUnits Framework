@@ -47,7 +47,7 @@ namespace BarclaysProject
         {
         //Assuming you have created a properrtiescollection class library
         PropertiesCollection.driver.Manage();
-        Other testing to be performed are listed below e.g negative testing 
+        //Other testing to be performed are listed below e.g negative testing 
         // Test of no parameters passed
         // Test correct number of params passed
         // Test more than required number of params passed
